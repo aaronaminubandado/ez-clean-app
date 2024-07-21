@@ -6,7 +6,7 @@ from sqlalchemy import text
 app = Flask(__name__)
 app.secret_key = "Password"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:2A1a2b_4@localhost/ezclean'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/ezclean'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
